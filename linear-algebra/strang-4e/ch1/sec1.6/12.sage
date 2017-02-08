@@ -16,9 +16,11 @@
 # the transpose of A inverse is equal to A inverse. This is the definition
 # of a symmetric matrix.
 
-# (c) Tridiagonality does not remain.
+# (c) Tridiagonality does not remain. For example:
+A = Matrix(RR, [[1,4,0,0],[3,4,1,0],[0,2,3,4], [0,0,1,3]])
 
-# (d) Entries would not necessarily remain whole.
+# (d) Entries would not necessarily remain whole. For example:
+A = Matrix(RR, [[1,4,0,0],[3,4,1,0],[0,2,3,4], [0,0,1,3]])
 
 # (e) Rational numbers are closed under multiplication and addition so a matrix
 # consisting of rational numbers would have rational entries as well.
