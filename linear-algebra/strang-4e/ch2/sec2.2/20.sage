@@ -5,15 +5,15 @@
 #   A3 = Matrix(ZZ, [[0,1,0],[0,0,0],[0,0,1]])
 
 
-A1 = Matrix(ZZ, [[1,2,3],[1,2,4]]) 
+A1 = Matrix(ZZ, [[1,2,3],[1,2,4]]) # doing manual reduction for fun
 A1 = Matrix(ZZ, [[1,2,3],[0,0,1]]) 
 A1 = Matrix(ZZ, [[1,2,0],[0,0,1]]) 
 # A1 has rank 2
 r = A1.rank()
-# invertible submatrix 
-SA1 = Matrix(ZZ, [[2,3],[2,4]])
+# invertible submatrix with column switching
+SA1 = Matrix(ZZ, [[1,3],[1,4]])
 
-A2 = Matrix(ZZ, [[1,2,3],[2,4,6]])
+A2 = Matrix(ZZ, [[1,2,3],[2,4,6]]) 
 A2 = Matrix(ZZ, [[1,2,3],[0,0,0]])
 # A2 has rank 1
 r = A2.rank()
@@ -23,5 +23,5 @@ SA2 = Matrix(ZZ, [[1]])
 A3 = Matrix(ZZ, [[0,1,0],[0,0,0],[0,0,1]])
 # A3 has rank 2
 r = A3.rank()
-# invertible submatrix... i assume row switching is fair game?
+# invertible submatrix with row switching
 SA3 = Matrix(ZZ, [[1,0],[0,1]])
