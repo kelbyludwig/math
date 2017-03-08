@@ -14,7 +14,7 @@ for row in A.rows():
 # the left nullspace and the columns space are orthogonal
 y = A.left_kernel().matrix()
 for column in A.columns():
-    assert column.dot_product(y.row(0)) == 0
+    assert column.dot_product(y.row(0)) == 0 #left kernel has dim 1 so row(0) is chill
 
 # a vector z orthogonal to the nullspace
 # the nullspace and the row space are orthogonal
