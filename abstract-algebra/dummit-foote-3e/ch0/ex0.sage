@@ -61,3 +61,18 @@ R = B*A
 
 # (a) is not well-defined. f(1/1) = 1, f(2/2) = 2, but 1/1=2/2
 # (b) is well-defined.
+
+# 6. Determine whether the function f : R^+ => Z defined by mapping a real number r to the first digit to the right of the decimal point in a decimal expnsion of r is well-defined.
+
+# If reals like 1.9999999... and 2.0 are considered equal than this function is
+# not well-defined.
+
+# 7. Let f : A => B be a surjective map of sets. Prove that the relation
+#    a ~ b iff f(a) = f(b)
+# is an equivalence relation whose equivalence classes are the fibers of f.
+
+# Suppose a, b, c are in A.
+# If f(a) = f(a) then a ~ a so the reflexive property holds
+# If f(a) = f(b) => f(b) = f(a) then a ~ b => b ~ a so the symmetric property holds
+# If f(a) = f(b) and f(b) = f(c) => f(a) = f(c) then a ~ b and b ~ c => a ~ c so the transitive property holds
+# I'm not sure what I'm supposed to do with the equivalence class part... but this seems okay.
