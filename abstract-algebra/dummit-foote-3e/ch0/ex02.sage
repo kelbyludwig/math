@@ -98,3 +98,22 @@ assert lcm(69, 372) == 8556
 # 2) have enough primes whose product is larger than N 3) have small primes that, 
 # once it is raised to a power, is larger than N.
 # i know thats a shitty proof but i'm okay with that
+
+# 11. prove that if d divides n than phi(d) divides phi(n) where phi is Euler's phi function.
+
+# d | n => n = dx for some x
+# phi(d) | phi(n) = > phi(n) = phi(d)*y for some y
+
+# d has prime factorization d = p1^a1 * ... * ps^as
+# n has prime factorization n = q1^b1 * ... * qt^bt
+
+# phi(d) = p1^(a1-1) * (p1-1) * ... * ps^(as-1) * (ps-1)
+# phi(n) = q1^(b1-1) * (q1-1) * ... * qt^(bt-1) * (qt-1)
+
+# if gcd(d,x) = 1
+# phi(n) = phi(dx) = phi(d)*phi(x) => phi(d) | phi(n)
+
+# if gcd(d,x) != 1
+# even though there are some shared prime factors between d and x, it will
+# still be possible to rewrite phi(n) = q1^(b1-1) * (q1-1) * ... * qt^(bt-1) * (qt-1) 
+# as phi(d) * some number.
