@@ -64,3 +64,18 @@ assert lcm(69, 372) == 8556
 # let b = t 
 # n cannot divide neither s or t because s,t < n.
 # however, ab = st = n and n | n.
+
+# 7. If p is prime prove that there do not exist nonzero integers a and b such that a^2 = pb^2 (i.e. sqrt(p) is not a rational number)
+
+# assume a^2 = pb^2
+
+# let a have a factorization of p1^a1 * p2^a2 * ... * ps^as
+# let b have a factorization of q1^b1 * q2*b2 * ... * qt*bt
+
+# a^2 would have a factorization of (p1^2*a1) * (p2^2*a2) * ... * (ps^2*as)
+# b^2 would have a factorization of (q1^2*b1) * (q2^2*b2) * ... * (qt^2*bt)
+
+# if a^2 = pb^2 there would be an odd power of p in a^2's factorization, as all
+# of the exponents in b^2's factorization are even.
+# this cannot be true, as the non-zero prime powers of a^2's factorization must
+# be even.
