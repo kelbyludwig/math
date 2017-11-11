@@ -79,3 +79,22 @@ assert lcm(69, 372) == 8556
 # of the exponents in b^2's factorization are even.
 # this cannot be true, as the non-zero prime powers of a^2's factorization must
 # be even.
+
+# 10. Prove for any given positive integer N there exist only finitely many integers n
+# with phi(n) = N where phi denotes Euler's phi-function. Conclude in particular that
+# phi(n) tends to infinity as n tends to infinity.
+
+# by definition we know:
+# N = p1^(a1 - 1) * (p1 - 1) * p2^(a2 - 1) * (p2 - 1) * ... * ps^(as - 1) * (ps - 1)
+
+# in other words, phi(n) is a function of the factors of n. phi(n) will grow if n has more
+# different primes, larger primes, or larger exponents for its factors. as n
+# grows, the number and/or size of those prime powers and/or their exponents
+# would grow too. so it makes sense that as n tends towards infinity phi(n) does as
+# well.
+
+# intuitively, it seems unlikely that values of n much larger than N would continue
+# produce n. if n is very large it must either: 1) have prime powers larger than N
+# 2) have enough primes whose product is larger than N 3) have small primes that, 
+# once it is raised to a power, is larger than N.
+# i know thats a shitty proof but i'm okay with that
