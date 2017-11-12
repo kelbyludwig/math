@@ -41,3 +41,12 @@ assert Z29(37^100) == 23
 # factor of 2 (again from results of prob 6). that is: a'' = a'/2 = a/4, b'' = b'/2 = b/4, etc.
 # this behavior will continue on until a,b, or c can no longer be an integer
 # so there is a contradiction.
+
+# 13. Let n be an integer greater than 1 and let a be an integer s.t. 1 <= a <= n.
+# Prove if a and n are relatively prime then there is an integer c such that ac = 1 (mod n)
+# [use the fact that the gcd of two integers is a Z-linear combination of the integers]
+
+# gcd(a, n) = 1
+# euclid's algo says: ac + nd = 1 for some integers c,d
+# ac + nd = 1 can be rewritten as: ac = 1 - nd
+# which is another way of writing ac = 1 (mod n)
