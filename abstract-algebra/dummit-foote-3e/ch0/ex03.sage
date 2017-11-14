@@ -42,6 +42,12 @@ assert Z29(37^100) == 23
 # this behavior will continue on until a,b, or c can no longer be an integer
 # so there is a contradiction.
 
+# 10. Prove that the number of elements of (Z/nZ)^x is phi(n) where phi is Euler's phi function.
+
+# Proposition 4: (Z/nZ)^x = { all a in Z/nZ s.t. gcd(a,n) = 1 }
+# phi(n) is defined as the number of positive integers a <= n with gcd(a,n) = 1
+# these are the same by definition, no?
+
 # 13. Let n be an integer greater than 1 and let a be an integer s.t. 1 <= a <= n.
 # Prove if a and n are relatively prime then there is an integer c such that ac = 1 (mod n)
 # [use the fact that the gcd of two integers is a Z-linear combination of the integers]
