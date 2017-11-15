@@ -87,3 +87,17 @@ assert Z(17)^2 == 1
 #   |x| = |g^-1 * x * g|
 #=> |gx| = |g*g^-1 * x * g|
 #=> |gx| = |xg|
+
+# 25. Prove that if x^2 = 1 for all x in G then G is abelian
+
+# G being abelian implies ab = ba for all a,b in G
+# if x^2 = 1 for all x in G, then x must be its own inverse
+# suppose a, b are in G 
+# this implies that a^2 = b^2 = (ab)^2 = (ba)^2 = 1
+# suppose ab != ba
+# ab != ba
+# aab != aba
+# aabb != abab
+# a^2b^2 != (ab)^2
+# 1*1 != 1
+# which is a contradiction
