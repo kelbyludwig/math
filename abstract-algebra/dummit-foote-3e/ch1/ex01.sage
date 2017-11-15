@@ -64,3 +64,26 @@ assert Z(17)^2 == 1
 
 # suppose x has order a. i.e. x^a == 1 (using multiplicative group shorthand)
 # (x^-1)^a == x^-a == (x^a)^-1 == 1^-1 = 1
+
+# 22. If x and g are elements of the group G, prove that |x| = |g^-1 * x * g|. Deduce that |ab| = |ba| for all a, b in G.
+
+# assume that |x| != |g^-1 * x * g|
+# note that: 
+# (g^-1 * x * g)^2 = (g^-1 * x * g) * (g^-1 * x * g) = g^-1 * x^2 * g
+# this generalizes to:
+# (g^-1 * x * g)^n = (g^-1 * x^n * g)
+
+# another way to write:
+# |x| != |g^-1 * x * g|
+# is 
+# 1 = x^n != (g^-1 * x * g)^n
+#         != (g^-1 * x^n * g)
+#         != (g^-1 * 1 * g)
+#         != (g^-1 * g)
+#         != 1
+# by contradiction they must be equal
+
+# additionally, if
+#   |x| = |g^-1 * x * g|
+#=> |gx| = |g*g^-1 * x * g|
+#=> |gx| = |xg|
