@@ -59,3 +59,8 @@ assert Z(5)^6 == 1
 assert Z(13)^3 == 1
 assert Z(-13)^6 == 1
 assert Z(17)^2 == 1
+
+# 20. For x an element in G show that x and x^-1 have the same order
+
+# suppose x has order a. i.e. x^a == 1 (using multiplicative group shorthand)
+# (x^-1)^a == x^-a == (x^a)^-1 == 1^-1 = 1
