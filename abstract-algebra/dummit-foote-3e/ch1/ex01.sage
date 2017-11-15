@@ -49,4 +49,13 @@ expand(x1*x2) #=> sqrt(2)*b*c + sqrt(2)*a*d + a*c + 2*b*d
 #      = a/(a^2 - 2*b^2) - (b/(a^2 - 2*b^2))*sqrt(2)
 #      this is also in G
 
-
+# 14. Find the orders of the following elements of the multiplicative
+#     group (ZZ/36ZZ)^x:
+#     1, -1, 5, 13, -13, 17
+Z = Zmod(36)
+assert Z(1)^1 == 1
+assert Z(-1)^2 == 1
+assert Z(5)^6 == 1
+assert Z(13)^3 == 1
+assert Z(-13)^6 == 1
+assert Z(17)^2 == 1
