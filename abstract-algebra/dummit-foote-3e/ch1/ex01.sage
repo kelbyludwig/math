@@ -101,3 +101,26 @@ assert Z(17)^2 == 1
 # a^2b^2 != (ab)^2
 # 1*1 != 1
 # which is a contradiction
+
+# 31. Prove that any finite group G of even order contains an element of order 2.
+# [Let t(G) be the set { g in G s.t. g != g^-1 }. Show that t(G) has an even 
+# number of elements and every nonidentity element of G ~ t(G) has order 2.]
+
+# Let t(G) be the set { g in G s.t. g != g^-1 }
+# since G is finite t(G) is finite. We can write the elements of t(G) like
+# an ordered set of pairs like:
+# (a, b) = 1 ; which implies that ab = 1
+# (b, c) = 1 ; which implies that bc = 1
+# and so on...
+# these pairs would never repeat an element, as that would imply that G
+# does not have uniquely determined inverses.
+# therefore, the set t(G) has an even number of elements as there would
+# be N sets of 2 elements.
+
+# G must have an identity element which would not be in t(G).
+# so the finite group G is compromised of at least the elements of t(G), the identity.
+# That is: G = t(G) + e + X ; where X is all remaining elements in G
+# a non-identity element x with order 2 implies that x^2 = 1, or in other words
+# x^-1 = x. Therefore any elements in X have order 2.
+# There must be at least one element in X because otherwise G would have
+# an odd order which contradicts the original assumption.
