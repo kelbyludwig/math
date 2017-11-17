@@ -24,3 +24,17 @@ assert D_6.order() == 6
 auto_solutions = map(lambda x: x.order(), D_6)
 from collections import Counter as ctr
 assert ctr(manual_solutions) == ctr(auto_solutions) # not a perfect comparison but good enough
+
+# (b)
+# doing this manually...
+# D_8 = D_2*4 = {1, r, r^2, r^3, s, sr, sr^2, sr^3}
+# ord(1)    = 1
+# ord(r)    = 4 | rrrr = r^4 = 1
+# ord(r^2)  = 2 | (r^2)(r^2) = r^4 = 1
+# ord(r^3)  = 4 | (r^3)(r^3)(r^3)(r^3) = r^12 = (r^4)^3 = 1
+# ord(s)    = 2
+# ord(sr)   = 2 | srsr = ss(r^-1)r = 1*1 = 1
+# ord(sr^2) = 2 | srrsrr = srs(r^-1)rr = srsr = 1
+# ord(sr^3) = 2 | srrrsrrr = srrs(r^-1)rrr = srrsrr = 1
+
+# this already feels pretty redundant so i'm moving on...
