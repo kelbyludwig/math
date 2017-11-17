@@ -38,3 +38,14 @@ assert ctr(manual_solutions) == ctr(auto_solutions) # not a perfect comparison b
 # ord(sr^3) = 2 | srrrsrrr = srrs(r^-1)rrr = srrsrr = 1
 
 # this already feels pretty redundant so i'm moving on...
+
+# 2. Use the generators and relations above to show that if x is any element
+# of D_2n which is not a power of r, then rx = xr^-1
+
+# x is in the set { s, sr, sr^1, sr^2, etc. }
+# x = sr^n for some n
+# r(sr^n) = (sr^n)r^-1
+# rsr^n = sr^n-1
+# rs(r^n)(r^-n) = s(r^n-1)(r^-n)
+# rs = sr^-1
+# which is a relation that defines D_2n.
