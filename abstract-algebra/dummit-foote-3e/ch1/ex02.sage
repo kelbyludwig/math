@@ -65,3 +65,17 @@ assert ctr(manual_solutions) == ctr(auto_solutions) # not a perfect comparison b
 
 # 7. Show that {a, b | a^2 = b^2 = (ab)^n = 1 } gives a presentation for D_2n in
 # terms of the two generators a = s and b = sr of order 2 computed in exercise 3.
+
+# With generators (r, s), the original relations of D_2n are: 
+# r^n = 1
+# s^2 = 1
+# rs = sr^-1
+
+# Using the generators a=s and b=sr, the new relations follow from the above:
+# a = s
+# ab = ssr = s^2r = r
+# so the generators of a and b can generate the original generators
+# a^2 maps to the original pres as: a^2 = s^2 = 1 which follows from the original pres
+# b^2 maps to the original pres as: b^2 = (sr)^2 = srsr = 1 which follows from the proof from problem 3
+# (ab)^n maps to the original pres as: (ab)^n = (r)^n = 1 which follows from the original pres
+# so this presentation is a valid one.
