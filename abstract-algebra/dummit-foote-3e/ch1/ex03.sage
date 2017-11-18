@@ -15,3 +15,15 @@
 # 5. Find the order of (1 12 8 10 4)(2 13)(5 11 7)(6 9).
 
 # lcm(5, 2, 3, 2) = 30
+
+# 10. Prove that if s is the m-cycle (a1 a2 ... am), then for all
+# t in {1, 2, ..., m}, s^i(a_k) = a_{k+i}, where k+i is replaced
+# by its least reside mod m when k+i > m. Deduce that ord(s) = m.
+
+# s^0(a_k) = a_k 
+# s^1(a_k) = a_{(k+1)%m}
+# s^i(a_k) = s^(i-1)(a_{k+1%m}) = ... = a_{(k+i+1)%m}
+
+# if s(a_k) = a_{(k+1)%m} the smallest k that maps to a1 is k = m.
+
+
