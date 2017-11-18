@@ -26,4 +26,28 @@
 
 # if s(a_k) = a_{(k+1)%m} the smallest k that maps to a1 is k = m.
 
+# 11. Let s be the m-cycle (1 2 ... m). Show that s^i is also a
+# m-cycle iff i is relatively prime to m.
 
+# m = 6
+# s   = (a1 a2 a3 a4 a5 a6)
+# s^2 = (a1 a3 a5)(a2 a4 a6)
+
+# a cycle is created by iteratively calling s^i on some 
+# starting element
+# s^i(j) = i+j % m
+# s^i(s^i(j)) = s^i(i+j % m) = i+i+j % m
+# s^i(s^i(s^i(j))) = ... = i+i+i+j % m
+# ...
+# in order for s^i to be a m-cycle, iteratively calling
+# s^i must produce m different elements.
+# that is the following constraint must hold:
+# xi + j != yi + j (mod m) for any 1 <= x,y <= m s.t. x!=y
+# this simplifies to:
+# ix != iy (mod m) 
+# which if gcd(i, m) != 1 this will not hold for
+# x = m / gcd(i, m) [derived from x*gcd(i,m) = m]
+# y = m
+# which are both in the range 1 <= x,y <= m
+# but if gcd(i, m) = 1 this would imply that x = y which
+# means the constraint still holds
