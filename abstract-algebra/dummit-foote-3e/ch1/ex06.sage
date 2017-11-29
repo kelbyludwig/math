@@ -35,3 +35,24 @@
 # identity element in H, x^c must be the identity. This is a contradiction, as ord(x) = b
 # but x^c = 1 and c < b. Therefore, b is the smallest integer such that phi(x)^b = phi(1) and
 # ord(phi(x)) == ord(x).
+
+# 3. If phi : G -> H is an isomorphism, prove that G is abelian iff H is abelian. If phi is a
+# homomorphism, what additional conditions on phi (if any) are sufficient to ensure that if 
+# G is abelian, so is H?
+
+# Assuming: phi is a isomorphism, G is abelian.
+# Proving: The above implies H is abelian.
+# Since G is abelian: 
+#   xy = yx for any x, y in G.
+# Since phi is an isomorphism:
+#   phi(xy) = phi(x)*phi(y)
+#   phi(yx) = phi(y)*phi(x)
+#   phi(xy) = phi(yx) => phi(y)*phi(x) = phi(x)*phi(y)
+# Thefore H is abelian.
+# We can use a very similar proof starting with the assumption that H is
+# abelian to prove that G is abelian.
+
+# If phi is just a homorphism, and G and H are both abelian, what must be true of phi?
+# My proof above glossed over this, but the first part of the proof (phi is an isomorphism and G is abelian => H is abelian)
+# relies on the fact that phi is surjective. That is, given two elements x, y in G, phi(x) and phi(y)
+# map to arbitrary elements in H. If phi was not surjective, this would not be a gaurantee.
