@@ -75,3 +75,20 @@ assert(x^4 == 1)
 # Rewriting the equation above:
 #   phi(q/2) + phi(q/2) = x + x = 1
 # However, there is no value x in ZZ where this is true so phi cannot be an isomorphism.
+
+# 7. Prove that D_8 and Q_8 are not isomorphic.
+
+# it is not possible to great a bijection from D_8 to Q_8 where each element
+# has order equal to its image.
+D8 = DihedralGroup(4)
+Q8 = QuaternionGroup()
+D8ords = []
+Q8ords = []
+for e in D8.list():
+    D8ords.append(e.order())
+for e in Q8.list():
+    Q8ords.append(e.order())
+
+assert(sorted(D8ords) != sorted(Q8ords))
+# print(sorted(D8ords))
+# print(sorted(Q8ords))
