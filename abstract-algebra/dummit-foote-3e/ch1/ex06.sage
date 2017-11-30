@@ -60,5 +60,18 @@
 # 4. Prove that multiplicative groups R - {0} and C - {0} are not isomorphic.
 
 # 0+1i in C - {0} has order 4. There is no element in R - {0} that has order 4.
+# pg 38 asserts that for all x in G, ord(x) == ord(phi(x)) where phi is an isomorphism from G to H.
 x = 0+1j
 assert(x^4 == 1)
+
+# 6. Prove that the additive groups ZZ and QQ are not isomorphic.
+
+# i had to nab this one from here because i got way stuck: https://math.stackexchange.com/questions/620551/prove-that-the-additive-groups-mathbbz-and-mathbbq-are-not-isomorphic/620553
+
+# suppose phi is an isomorphism and phi(q) = 1 where q is in QQ and 1 is in ZZ.
+# these assumptions suggest the follwowing equation should hold:
+#   phi(q) = phi(q/2 + q/2) = phi(q/2) + phi(q/2) = 1
+# if phi is an isomorphism, phi(q/2) should map to some element x in ZZ.
+# Rewriting the equation above:
+#   phi(q/2) + phi(q/2) = x + x = 1
+# However, there is no value x in ZZ where this is true so phi cannot be an isomorphism.
