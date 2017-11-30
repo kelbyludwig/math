@@ -56,3 +56,9 @@
 # My proof above glossed over this, but the first part of the proof (phi is an isomorphism and G is abelian => H is abelian)
 # relies on the fact that phi is surjective. That is, given two elements x, y in G, phi(x) and phi(y)
 # map to arbitrary elements in H. If phi was not surjective, this would not be a gaurantee.
+
+# 4. Prove that multiplicative groups R - {0} and C - {0} are not isomorphic.
+
+# 0+1i in C - {0} has order 4. There is no element in R - {0} that has order 4.
+x = 0+1j
+assert(x^4 == 1)
